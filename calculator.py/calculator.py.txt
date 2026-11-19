@@ -1,0 +1,30 @@
+#CALCULATOR
+print("CALCULATOR")
+#taking input from the user
+num1=float(input("enter the first number:"))
+num2=float(input("enter the second number:"))
+#displayning operations
+print("\nselect an operation:")
+print("1.Adittion(+)")
+print ("2.Subtration(-)")
+print("3.Multiplication(*)")
+print("4.Division(/)")
+choice=input("enter your choice(1-4):")
+#performing calculation
+if choice=='1':
+  result=num1+num2
+  print("Result:",result)
+elif choice=='2':
+  result=num1-num2
+  print("Result:",result)
+elif choice=='3':
+  result=num1*num2
+  print("Result:",result)
+elif choice=='4':
+  if num2!=0:
+      result=num1/num2
+      print("Result:",result)
+  else:
+      print("Error! Division by zero is not allowed.")
+else:
+    print("Invalid chice! Pleases select 1 to 4.")
